@@ -7,6 +7,7 @@ public class BasicCoreJavaProgram {
         flipCoin();
         leapYear();
         powerOfTwo();
+        harmonicSum();
     }
     public static void flipCoin(){
         double flip=Math.random();
@@ -33,7 +34,6 @@ public class BasicCoreJavaProgram {
     }
     public static void harmonicSum(int num){
         double sum=0;
-        Scanner sc=new Scanner(System.in);
           num=5;
          for(double i=1;i<=num;i++){
              sum=sum+1/i;
