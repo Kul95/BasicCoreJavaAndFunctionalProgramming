@@ -9,6 +9,7 @@ public class BasicCoreJavaProgram {
         powerOfTwo();
 //        harmonicSum();
         evenOdd();
+        swapTwoNum();
     }
     public static void flipCoin(){
         double flip=Math.random();
@@ -49,5 +50,14 @@ public class BasicCoreJavaProgram {
         }else{
             System.out.println(num+ " is odd number.");
         }
+    }
+    public static void swapTwoNum(){
+        int n1=20,n2=50;
+        int temp;
+        System.out.println("Before swapping : "+n1+ " and "+n2 );
+        temp=n1;
+        n1=n2;
+        n2=temp;
+        System.out.println("After swapping :"+n1+ " and "+n2);
     }
 }
