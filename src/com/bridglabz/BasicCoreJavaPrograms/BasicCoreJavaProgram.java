@@ -12,6 +12,7 @@ public class BasicCoreJavaProgram {
         swapTwoNum();
         quotientRemainder();
         vowelOrConsonent();
+        largestNum();
     }
     public static void flipCoin(){
         double flip=Math.random();
@@ -76,6 +77,16 @@ public class BasicCoreJavaProgram {
             System.out.println(ch+ " is vowel");
         }else{
             System.out.println(ch+ " is consonent");
+        }
+    }
+    public static void largestNum(){
+        int n1=2,n2=3,n3=6;
+        if(n1>n2 && n1>n3){
+            System.out.println("Largest number is :"+n1);
+        }else if(n2>n1 && n2>n3){
+            System.out.println("Largest number is :"+n2);
+        }else{
+            System.out.println("Largest number is :"+n3);
         }
     }
 
