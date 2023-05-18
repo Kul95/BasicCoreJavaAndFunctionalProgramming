@@ -11,6 +11,7 @@ public class BasicCoreJavaProgram {
         evenOdd();
         swapTwoNum();
         quotientRemainder();
+        vowelOrConsonent();
     }
     public static void flipCoin(){
         double flip=Math.random();
@@ -68,6 +69,14 @@ public class BasicCoreJavaProgram {
         int remainder=dividend % divisor;
         System.out.println("Quotient is :"+quotient );
         System.out.println("remainder is :"+remainder);
+    }
+    public static void vowelOrConsonent(){
+        char ch='e';
+        if(ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'|| ch=='u'||ch=='A'|| ch=='E'|| ch=='I'|| ch=='O'|| ch=='U'){
+            System.out.println(ch+ " is vowel");
+        }else{
+            System.out.println(ch+ " is consonent");
+        }
     }
 
 }
