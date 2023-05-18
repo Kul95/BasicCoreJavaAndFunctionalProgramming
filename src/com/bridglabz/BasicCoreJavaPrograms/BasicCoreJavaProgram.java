@@ -10,6 +10,7 @@ public class BasicCoreJavaProgram {
 //        harmonicSum();
         evenOdd();
         swapTwoNum();
+        quotientRemainder();
     }
     public static void flipCoin(){
         double flip=Math.random();
@@ -60,4 +61,13 @@ public class BasicCoreJavaProgram {
         n2=temp;
         System.out.println("After swapping :"+n1+ " and "+n2);
     }
+    public static void quotientRemainder(){
+        int dividend=20;
+        int divisor=3;
+        int quotient=dividend/divisor;
+        int remainder=dividend % divisor;
+        System.out.println("Quotient is :"+quotient );
+        System.out.println("remainder is :"+remainder);
+    }
+
 }
