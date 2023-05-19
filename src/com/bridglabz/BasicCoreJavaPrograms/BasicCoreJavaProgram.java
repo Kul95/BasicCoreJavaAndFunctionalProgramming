@@ -13,6 +13,7 @@ public class BasicCoreJavaProgram {
         quotientRemainder();
         vowelOrConsonent();
         largestNum();
+        primeFactor();
     }
     public static void flipCoin(){
         double flip=Math.random();
@@ -42,7 +43,6 @@ public class BasicCoreJavaProgram {
           num=5;
          for(double i=1;i<=num;i++){
              sum=sum+1/i;
-             System.out.println(sum);
              System.out.println(sum);
          }
     }
@@ -89,5 +89,19 @@ public class BasicCoreJavaProgram {
             System.out.println("Largest number is :"+n3);
         }
     }
-
+    public static void primeFactor(){
+        System.out.println("Enter the number: ");
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int i=2;
+        int temp=num;
+        while(temp>1){
+            if(temp%i==0){
+                System.out.print(i+" , ");
+                temp=temp/i;
+            }else{
+                i++;
+            }
+        }
+    }
 }
